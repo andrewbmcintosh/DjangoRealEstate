@@ -1,5 +1,5 @@
 from django.db import models
-import datetime from datetime
+from datetime import datetime
 
 
 class Realtor(models.Model):
@@ -7,7 +7,7 @@ class Realtor(models.Model):
     photo = models.ImageField(upload_to='photos/%Y/%m/%d/')
     description = models.TextField(blank=True)
     phone = models.CharField(max_length=20)
-    email = models.TextField(max_length=50)
+    email = models.CharField(max_length=50)
     is_mvp = models.BooleanField(default=False)
     hire_date = models.DateTimeField(default=datetime.now, blank=True)
 
