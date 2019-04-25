@@ -10,7 +10,7 @@ def index(request):
         'listings': listings
     }
 
-    return render(request, 'listings/listings.html')
+    return render(request, 'listings/listings.html', context)
 
 
 def listing(request):
