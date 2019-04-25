@@ -1,7 +1,15 @@
 from django.shortcuts import render
 
+from .models import Listing
+
 
 def index(request):
+    listings = Listing.objects.all()
+
+    context = {
+        'listings': listings
+    }
+
     return render(request, 'listings/listings.html')
 
 

@@ -130,5 +130,5 @@ STATICFILES_DIRS = [
 ]
 
 # Media Folder Settings
-MEDIA_Root = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
